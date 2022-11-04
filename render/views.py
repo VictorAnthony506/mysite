@@ -5,11 +5,11 @@ from rest_framework.response import Response
 from render.models import Operation
 from render.serializers import OperationSerializer
 from rest_framework.views import APIView
-from render.ai import openaikey
 import openai
 
 
-openai.api_key = "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"
+openai.api_key = OPEN_AI_KEY
+
 
 def ai_answer(prompt=""):
     response = openai.Completion.create(
