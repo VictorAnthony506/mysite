@@ -41,7 +41,7 @@ class Arithmetic(APIView):
                     result = calculate.x * calculate.y
                 else:
                     result=ai_answer(calculate.operation_type)
-                data['result'] = result
+                data['result'] = "result"
                 data['operattion_type'] = calculate.operation_type          
         
         else:
