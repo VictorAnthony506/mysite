@@ -30,6 +30,7 @@ class Arithmetic(APIView):
     def post(self, request, format=None):
         serializer = OperationSerializer(data=request.data)
         data = {}
+        result = 0
         if serializer.is_valid():
                 calculate = serializer.save()
                 data["slackUsername"] = "anthonyvictor385"
@@ -41,7 +42,7 @@ class Arithmetic(APIView):
                     result = calculate.x * calculate.y
                 else:
                     result=ai_answer(calculate.operation_type)
-                data['result'] = "result"
+                data['result'] = result
                 data['operattion_type'] = calculate.operation_type          
         
         else:
