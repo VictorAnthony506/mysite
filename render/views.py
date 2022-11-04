@@ -9,7 +9,7 @@ from render.ai import openaikey
 import openai
 
 
-openai.api_key = openaikey
+openai.api_key = "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"
 
 def ai_answer(prompt=""):
     response = openai.Completion.create(
