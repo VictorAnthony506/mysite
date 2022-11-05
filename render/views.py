@@ -23,15 +23,15 @@ from rest_framework.views import APIView
 #     return (response.choices[0]['text'])
 
 class Arithmetic(APIView):
-    # def get(self, request, format=None):
-    #     ans = Operation.objects.all()
-    #     serializer = OperationSerializer(ans, many=True)
-    #     return Response(serializer.data)
-    # def get(self, request, format=None):
-    #     return Response({"slackUsername": "anthonyvictor385",
-    #                  "backend": True,
-    #                  "age": 23,
-    #                  "bio": "An AI enthusiast with interest in backend"})
+    def get(self, request, format=None):
+        ans = Operation.objects.all()
+        serializer = OperationSerializer(ans, many=True)
+        return Response(serializer.data)
+    def get(self, request, format=None):
+        return Response({"slackUsername": "anthonyvictor385",
+                     "backend": True,
+                     "age": 23,
+                     "bio": "An AI enthusiast with interest in backend"})
     
     
     def post(self, request, format=None):
@@ -56,7 +56,7 @@ class Arithmetic(APIView):
         else:
             data = serializer.errors
             
-        return Response(data, status=status.HTTP_201_CREATED)   
+        return Response(data, status=200)   
 
 
 
