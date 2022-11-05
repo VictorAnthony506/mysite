@@ -51,7 +51,7 @@ class Arithmetic(APIView):
                 # else:
                 #     result=ai_answer(calculate.operation_type)
                 data['result'] = result
-                data['operattion_type'] = calculate.operation_type          
+                data['operation_type'] = calculate.operation_type          
         
         else:
             data = serializer.errors
