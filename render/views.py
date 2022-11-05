@@ -27,11 +27,11 @@ class Arithmetic(APIView):
     #     ans = Operation.objects.all()
     #     serializer = OperationSerializer(ans, many=True)
     #     return Response(serializer.data)
-    def get(self, request, format=None):
-        return Response({"slackUsername": "anthonyvictor385",
-                     "backend": True,
-                     "age": 23,
-                     "bio": "An AI enthusiast with interest in backend"})
+    # def get(self, request, format=None):
+    #     return Response({"slackUsername": "anthonyvictor385",
+    #                  "backend": True,
+    #                  "age": 23,
+    #                  "bio": "An AI enthusiast with interest in backend"})
     
     
     def post(self, request, format=None):
