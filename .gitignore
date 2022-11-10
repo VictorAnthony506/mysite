@@ -1,8 +1,6 @@
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,python,django
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,python,django
 
-# # SECRET_KEY = 'django-insecure-ficw^8$ks@9h2k$)t*@lvv9mbohmdtgi_pc31q%-)=4bi&b%m4'
-
 ### Django ###
 *.log
 *.pot
